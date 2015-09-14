@@ -1,6 +1,6 @@
 #3D Touch Study Notes
 
-A collection of developmental information about 3D Touch introduced by Apple. 3D Touch is only available in iPhone 6s and iPhone 6s Plus running iOS 9.
+A collection of developmental information about 3D Touch introduced by Apple. 3D Touch is only available on iPhone 6s and iPhone 6s Plus running iOS 9.
 
 ##Home Screen Quick Actions
 
@@ -10,9 +10,7 @@ You can combine both types of quick action. Static quick actions are shown first
 
 ###Defining Static Quick Actions
 
-Static quick actions are defined in an app's **Info.plist** file in the **UIApplicationShortcutItem** array.
-
-Here are the keys that developer can use to define a single quick action:
+Static quick actions are defined in an app's **Info.plist** file in the **UIApplicationShortcutItem** array. Here are the keys that developer can use to define a single quick action:
 
 - **UIApplicationShortcutItemType**: use it to disambiguate among action types your app receives (_required_)
 - **UIApplicationShortcutItemTitle**: quick action title, if it’s too long and no subtitle string provide, the system displays the title on 2 lines (_required_)
@@ -36,7 +34,7 @@ func application(application: UIApplication, performActionForShortcutItem shortc
 }
 ```
 
- The above callback will be skipped if application(_:,willFinishLaunchingWithOptions:) or application(_:,didFinishLaunchingWithOptions:) returns false. Apple recommends handling shortcut items in those callbacks and return false if possible.
+ The above callback will be skipped if **application(\_:,willFinishLaunchingWithOptions:)** or **application(\_:,didFinishLaunchingWithOptions:)** returns false. Apple recommends handling shortcut items in those callbacks and return false if possible.
 
 ###Defining Dynamic Quick Actions
 
@@ -89,7 +87,7 @@ The above method is called automatically when a 3D Touch-registered view control
 
 ##Optional Peek Quick Actions
 
-User can obtain peek quick actions by swiping a peek upward if they are configured in the preview view controller. Developer can create a preview quick action with **UIPreviewAction** class, a group of preview quick actions with **UIPreviewActionGroup**, and both classes conform to **UIPreviewActionItem** protocol. Preview quick actions will be shown by simply override method previewActionItems() on UIViewController class, and return an array of objects conforming UIPreviewActionItem.
+User can obtain peek quick actions by swiping a peek upward if they are configured in the preview view controller. Developer can create a preview quick action with **UIPreviewAction** class, a group of preview quick actions with **UIPreviewActionGroup**, and both classes conform to **UIPreviewActionItem** protocol. Preview quick actions will be shown by simply override method **previewActionItems()** on UIViewController class, and return an array of objects conforming UIPreviewActionItem.
 
 ##Web View Peek and Pop
 
@@ -97,8 +95,7 @@ In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by usi
 
 **SFSafariViewController** automatically supports peek and pop for links and detected data.
 
-##Development Environment
+##Current Development Limitations
 
-With Xcode 7.0 you must develop on a device that supports 3D Touch. Simulator does not support 3D Touch.
-
-With Xcode 7.0 you must implement peek and pop view controllers in code. Interface Builder does not provide graphical support for configuring view controller or transitions for 3D Touch.
+1. With Xcode 7.0 you must develop on a device that supports 3D Touch. Simulator does not support 3D Touch.
+2. With Xcode 7.0 you must implement peek and pop view controllers in code. Interface Builder does not provide graphical support for configuring view controller or transitions for 3D Touch.
