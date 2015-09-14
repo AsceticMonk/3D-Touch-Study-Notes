@@ -99,3 +99,11 @@ In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by usi
 
 1. With Xcode 7.0 you must develop on a device that supports 3D Touch. **Simulator does not support 3D Touch**.
 2. With Xcode 7.0 you must implement peek and pop view controllers in code. Interface Builder does not provide graphical support for configuring view controller or transitions for 3D Touch.
+
+##References
+- [Adopting 3D Touch on iPhone](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543)
+- [Property List Key Reference](https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36)
+- [ApplicationShortcuts Sample Code](https://developer.apple.com/library/prerelease/ios/samplecode/ApplicationShortcuts/Introduction/Intro.html#//apple_ref/doc/uid/TP40016545)
+- [ViewControllerPreview Sample Code](https://developer.apple.com/library/prerelease/ios/samplecode/ViewControllerPreviews/Introduction/Intro.html#//apple_ref/doc/uid/TP40016546)
+- [Static Shortcut Items](https://littlebitesofcocoa.com/79)
+- [View Controller Previews](https://littlebitesofcocoa.com/80)
