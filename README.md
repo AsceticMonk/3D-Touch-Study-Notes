@@ -1,6 +1,6 @@
 #3D Touch Study Notes
 
-A collection of developmental information about 3D Touch introduced by Apple. 3D Touch is only available on iPhone 6s and iPhone 6s Plus running iOS 9.
+A collection of developmental information on 3D Touch introduced by Apple. 3D Touch is only available on iPhone 6s and iPhone 6s Plus running iOS 9.
 
 ##Home Screen Quick Actions
 
