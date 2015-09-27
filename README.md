@@ -106,4 +106,5 @@ In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by usi
 - [ApplicationShortcuts Sample Code](https://developer.apple.com/library/prerelease/ios/samplecode/ApplicationShortcuts/Introduction/Intro.html#//apple_ref/doc/uid/TP40016545)
 - [ViewControllerPreview Sample Code](https://developer.apple.com/library/prerelease/ios/samplecode/ViewControllerPreviews/Introduction/Intro.html#//apple_ref/doc/uid/TP40016546)
 - [Static Shortcut Items](https://littlebitesofcocoa.com/79)
+- [Dynamic Shortcut Items](https://littlebitesofcocoa.com/88)
 - [View Controller Previews](https://littlebitesofcocoa.com/80)
