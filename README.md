@@ -95,6 +95,10 @@ In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by usi
 
 **SFSafariViewController** automatically supports peek and pop for links and detected data.
 
+##Force Properties
+
+In iOS 9, the **UITouch** class offers 2 new properties: `force` and `maximumPossibleForce`. These properties enables developers to detect and respond touch pressures.
+
 ##Current Development Limitations
 
 1. With Xcode 7.0 you must develop on a device that supports 3D Touch. **Simulator does not support 3D Touch**.
