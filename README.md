@@ -34,11 +34,11 @@ func application(application: UIApplication, performActionForShortcutItem shortc
 }
 ```
 
- The above callback will be skipped if **application(\_:,willFinishLaunchingWithOptions:)** or **application(\_:,didFinishLaunchingWithOptions:)** returns false. Apple recommends handling shortcut items in those callbacks and return false if possible.
+ The above callback will be skipped if `application(\_:,willFinishLaunchingWithOptions:)` or `application(\_:,didFinishLaunchingWithOptions:)` returns false. Apple recommends handling shortcut items in those callbacks and return false if possible.
 
 ###Defining Dynamic Quick Actions
 
-Developer can create dynamic quick actions using **UIApplicationShortcutItem**, **UIMutableApplicationShortcutItem**, and **UIApplicationShortcutIcon** classes, and then assign them to app’s shared UIApplication object using the **shortcutItems** property.
+Developer can create dynamic quick actions using **UIApplicationShortcutItem**, **UIMutableApplicationShortcutItem**, and **UIApplicationShortcutIcon** classes, and then assign them to app’s shared UIApplication object using the `shortcutItems` property.
 
 ##UIKit Peek and Pop
 
@@ -67,7 +67,7 @@ func previewingContext(previewingContext: UIViewControllerPreviewing, viewContro
 }
 ```
 
-The above delegate method is invoked during the preview. Once a fully configured UIViewController is created, setting the **previewingContext.sourceRect** accomplishes the blurring effect, in which all other UI elements on screen is blurred but the content under user’s touch remains visually sharp.
+The above delegate method is invoked during the preview. Once a fully configured UIViewController is created, setting the `previewingContext.sourceRect` accomplishes the blurring effect, in which all other UI elements on screen is blurred but the content under user’s touch remains visually sharp.
 
 ```swift
 func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
@@ -87,11 +87,11 @@ The above method is called automatically when a 3D Touch-registered view control
 
 ##Optional Peek Quick Actions
 
-User can obtain peek quick actions by swiping a peek upward if they are configured in the preview view controller. Developer can create a preview quick action with **UIPreviewAction** class, a group of preview quick actions with **UIPreviewActionGroup**, and both classes conform to **UIPreviewActionItem** protocol. Preview quick actions will be shown by simply override method **previewActionItems()** on UIViewController class, and return an array of objects conforming UIPreviewActionItem.
+User can obtain peek quick actions by swiping a peek upward if they are configured in the preview view controller. Developer can create a preview quick action with **UIPreviewAction** class, a group of preview quick actions with **UIPreviewActionGroup**, and both classes conform to **UIPreviewActionItem** protocol. Preview quick actions will be shown by simply override method `previewActionItems()` on UIViewController class, and return an array of objects conforming UIPreviewActionItem.
 
 ##Web View Peek and Pop
 
-In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by using **allowsLinkPreview** property.
+In **WKWebView** and **UIWebView**, peek and pop for links can be enabled by using `allowsLinkPreview` property.
 
 **SFSafariViewController** automatically supports peek and pop for links and detected data.
 
