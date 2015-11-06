@@ -34,7 +34,7 @@ func application(application: UIApplication, performActionForShortcutItem shortc
 }
 ```
 
- The above callback will be skipped if `application(\_:,willFinishLaunchingWithOptions:)` or `application(\_:,didFinishLaunchingWithOptions:)` returns false. Apple recommends handling shortcut items in those callbacks and return false if possible.
+When a quick action launches the app, both `application(\_:,willFinishLaunchingWithOptions:)` and `application(\_:,didFinishLaunchingWithOptions:)` are called before the above method. When a quick action resumes the app from background, only above method is called. To avoid handling the quick action twice, you can handle it in either willFinish or didFinish and then return false. Returning false prevents the system from calling the above method. You can fetch quick action in launch options using key **UIApplicationLaunchOptionsShortcutItemKey**.
 
 ###Defining Dynamic Quick Actions
 
