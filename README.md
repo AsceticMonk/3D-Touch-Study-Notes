@@ -1,6 +1,6 @@
 # 3D Touch Study Notes
 
-A collection of developmental information on 3D Touch introduced by Apple. 3D Touch is only available on iPhone 6s and iPhone 6s Plus running iOS 9.
+A collection of developmental information on 3D Touch introduced by Apple. 3D Touch is available since iOS 9 running on iPhone 6s, 6s Plus or later.
 
 ## Home Screen Quick Actions
 
@@ -21,7 +21,7 @@ Static quick actions are defined in an app's **Info.plist** file in the **UIAppl
 
 ### UIApplicationShortcutItemUserInfo Usage
 
-When your app is installed and has not been launched, only static quick actions are displayed. Dynamic quick actions are displayed only after the first launch and if there is room in the list. If your app is updated and has not yet been launched, dynamic quick actions of previous version is displayed. One way to gracefully handle this scenario is to include app version information in UIApplicationShortcutItemUserInfo dictionary of a quick action.
+When your app is installed and has not been launched, only static quick actions are displayed. Dynamic quick actions are displayed only after the first launch and if there is room in the list. If your app is updated and has not yet been launched, dynamic quick actions of previous version is displayed. One way to gracefully handle this scenario is to include app version information in **UIApplicationShortcutItemUserInfo** dictionary of a quick action.
 
 ### Handling Quick Actions
 
@@ -101,8 +101,8 @@ In iOS 9, the **UITouch** class offers 2 new properties: `force` and `maximumPos
 
 ## Current Development Limitations
 
-1. With Xcode 7.0 you must develop on a device that supports 3D Touch. **Simulator does not support 3D Touch**.
-2. With Xcode 7.0 you must implement peek and pop view controllers in code. Interface Builder does not provide graphical support for configuring view controller or transitions for 3D Touch.
+1. With Xcode 7.1 you must develop on a device that supports 3D Touch. **Simulator does not support 3D Touch**.
+2. Starting with Xcode 7.1 you can configure 3D Touch segues using Interface Builder.
 
 ## References
 - [Adopting 3D Touch on iPhone](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543)
