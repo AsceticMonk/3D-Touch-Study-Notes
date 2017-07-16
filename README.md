@@ -50,7 +50,7 @@ It allows users to easily peek into a piece of content by pressing lightly, then
 if traitCollection.forceTouchCapability == .Available {
 	registerForPreviewingWithDelegate(self, sourceView: view)
 } else {
-	print(“3D Touch is not available.”)
+	print("3D Touch is not available.")
 	// Provide alternatives such as touch and hold,
 	// implemented with UILongPressGestureRecognizer class
 }
